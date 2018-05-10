@@ -3,7 +3,7 @@
     margin-top: -17px;
     height: 500px;
     background: url(img/bgtop.png);
-    background-position: top; 
+    background-position: left; 
     background-size: cover;
 }
 
@@ -11,7 +11,7 @@
     margin-top: -17px;
     height: 400px;
     background: url(img/btmpart.png);
-    background-position: top; 
+    background-position: left; 
     background-size: cover;
 }
 
@@ -29,18 +29,15 @@
 .tagbox {
     width: 300px;
     position: absolute;
-    top: 200px;
+    margin-top: 200px;
 }
 
 .tagbox2 {
-    width: 400px;
+    max-width: 400px;
     float: right;
     margin-top: 80px;
 }
 
-.tagbox2 .tag-follow {
-    font-size: 24px;
-}
 
 .centerbox {
     text-align: center;
@@ -54,4 +51,52 @@
     font-size: 23px;
     line-height: 44px;
     margin: -88px 0 0 44px;
+}
+
+#schedule{
+    margin-bottom: 100px;
+}
+
+.tagbox2 .tag-follow {
+    font-size: 24px;
+}
+
+
+@media (max-width: 550px) {
+
+    #schedule{
+        margin-bottom: 80px;
+    }
+
+    .btm-image {
+        height: 180px;
+        background-repeat: no-repeat;
+    }
+
+    .tagbox2 {
+        width: 100%;
+        max-width: 100%;
+        float: auto;
+        margin-top: 190px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 40px;
+    }
+
+    .tagbox2 .tag-follow {
+        font-size: 20px;
+    }
+
+    .eventnotes {
+        position: absolute;
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .line1{
+        margin-top: 18px;
+    }
+    .line2{
+        margin-top: 18px;
+    }
 }
